@@ -1,0 +1,39 @@
+{
+  "name": "tracker-clients-beacons-node",
+  "version": "1.0.0",
+  "description": "Node.js clients Beacon positioing microservice",
+  "main": "./obj/src/index.js",
+  "typings": "./obj/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afmmars/tracker-clients-biacons-node.git"
+  },
+  "keywords": [
+    "iquipsys",
+    "tracker",
+    "beacons"
+  ],
+  "author": "Anastas Fonotov <anastasf@gmail.com>",
+  "dependencies": {
+    "pip-services-aws-node": "^1.0.0",
+    "pip-services-commons-node": "^2.0.0",
+    "pip-services-net-node": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/lodash": "*",
+    "@types/async": "*",
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "chai": "*",
+    "mocha": "*",
+    "restify": "^4.3.0",
+    "aws-sdk": "*",
+    "tracker-services-beacons-node": "https://github.com/afmmars/tracker-services-biacons-node.git"
+  }
+}
