@@ -1,11 +1,11 @@
 import { FilterParams } from 'pip-services-commons-node';
 import { PagingParams } from 'pip-services-commons-node';
 import { DataPage } from 'pip-services-commons-node';
-import { BeaconV1 } from '../data/version1/BeaconV1';
+import { BeaconV1 } from './BeaconV1';
 import { IBeaconsClientV1 } from './IBeaconsClientV1';
 
 
-export class IBeaconsNullClientV1 {
+export class BeaconsNullClientV1 {
 
     public getBeacons(correlationId: string, filter: FilterParams, paging: PagingParams, callback: (err: any, page: DataPage<BeaconV1>) => void) : void {
 
@@ -13,27 +13,27 @@ export class IBeaconsNullClientV1 {
         }
         
 
-        public getBeaconsById(correlationId: string, id: string,
+        public getBeaconById(correlationId: string, id: string,
         callback: (err: any, item: BeaconV1) => void): void {
 
         }
 
         public calculatePosition(correlationId: string, siteId: string, ids: string[],
+        callback: (err: any, position: any) => void): void {
+
+        }
+
+        public createBeacon(correlationId: string, item: BeaconV1,
         callback: (err: any, item: BeaconV1) => void): void {
 
         }
 
-        public createBeacons(correlationId: string, item: BeaconV1,
+        public updateBeacon(correlationId: string, item: BeaconV1,
         callback: (err: any, item: BeaconV1) => void): void {
 
         }
 
-        public updateBeacons(correlationId: string, item: BeaconV1,
-        callback: (err: any, item: BeaconV1) => void): void {
-
-        }
-
-        public deleteBeaconsById(correlationId: string, id: string,
+        public deleteBeaconById(correlationId: string, id: string,
         callback: (err: any, item: BeaconV1) => void): void {
 
         }
